@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User registration" parallel="false">
+  <test name="Chrome">
+    <classes>
+      <class name="com.nopcommerce.users.Users_01_Register"/>
+    </classes>
+  </test>
+</suite> 
