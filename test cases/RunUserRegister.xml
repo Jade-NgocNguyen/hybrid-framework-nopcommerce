@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="User registration" parallel="false">
+  <parameter name="url" value="https://demo.nopcommerce.com/"/>
   <test name="Chrome">
     <classes>
       <class name="com.nopcommerce.users.Users_01_Register"/>

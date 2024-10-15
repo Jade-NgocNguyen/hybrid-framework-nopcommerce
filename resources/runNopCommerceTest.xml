@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce Auto " parallel="false">
-  <test name="Chrome">
-    <classes>
-      <class name="com.nopcommerce.users.Users_01_Register"/>
-    </classes>
-  </test>
+	<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="reportConfig.ReportNGListener"/>
+	</listeners>
+	
+	<parameter name="url" value="https://demo.nopcommerce.com/"/>
+	
+ 	<test name="Chrome">
+ 		<parameter name="browser" value="chrome"/>
+		<classes>
+      		<class name="com.nopcommerce.users.Users_01_Register"/>
+      	</classes>
+  	</test>
+  	
+  	<test name="Firefox">
+  	<parameter name="browser" value="firefox"/>
+		<classes>
+      	</classes>
+  	</test>
 </suite> 
